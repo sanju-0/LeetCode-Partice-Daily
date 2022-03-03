@@ -1,8 +1,8 @@
 class Solution {
 public:
-    int ans = 0;
+    //int ans = 0;
     int numberOfArithmeticSlices(vector<int>& nums) {
-        if(nums.size() == 2) return 0;
+        // if(nums.size() == 2) return 0;
      int ans = 0, curr = 0;
      for(int i=2;i<nums.size();i++){
          if(nums[i] - nums[i-1] == nums[i-1] - nums[i-2]){
