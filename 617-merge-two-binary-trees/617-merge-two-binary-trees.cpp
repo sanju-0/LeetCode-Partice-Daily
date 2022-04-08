@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// this is just for reduce time
 static int x = []() {
 std::ios::sync_with_stdio(false);
 cin.tie(nullptr);
