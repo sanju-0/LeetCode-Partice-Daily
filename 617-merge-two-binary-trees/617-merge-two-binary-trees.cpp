@@ -9,6 +9,11 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+static int x = []() {
+std::ios::sync_with_stdio(false);
+cin.tie(nullptr);
+return 0; }();
+
 class Solution {
 public:
     TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
