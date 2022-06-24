@@ -6,9 +6,9 @@ public:
           if(nums[i] == 0) return 0;
           if(nums[i] < 0) sum++; 
       }
-        if((sum&1) != 0){
-            return -1;
+        if(sum%2 == 0){
+            return 1;
         }
-        return 1;
+        return -1;
     }
 };
