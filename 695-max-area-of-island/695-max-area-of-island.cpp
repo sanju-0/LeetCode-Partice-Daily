@@ -12,6 +12,7 @@ private:
     int n, m;
     int trav(int i, int j, vector<vector<int>>& grid) {
         if (i < 0 || j < 0 || i >= n || j >= m || !grid[i][j]) return 0;
+        // here we make 1 into 0 to avoid researching same area again and again.
         grid[i][j] = 0;
         return 1 + trav(i-1, j, grid) + trav(i, j-1, grid) + trav(i+1, j, grid) + trav(i, j+1, grid);
     }
