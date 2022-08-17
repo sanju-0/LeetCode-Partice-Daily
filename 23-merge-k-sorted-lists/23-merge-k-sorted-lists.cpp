@@ -23,8 +23,9 @@ public:
         
         ListNode* head = lists[0];
         
-        for (int i = 1; i < lists.size(); i++)
-            head = merge2Lists(head, lists[i]);
+        for (int i = 1; i < lists.size(); i++) {
+           head = merge2Lists(head, lists[i]); 
+        }
         
         return head;
     }
