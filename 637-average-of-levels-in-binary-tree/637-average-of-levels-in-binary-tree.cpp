@@ -40,5 +40,6 @@ public:
       }  
         
       return ans;
+    // we simple use BFS - level oder and queue for data storing.
     }
 };
